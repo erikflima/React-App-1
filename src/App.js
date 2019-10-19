@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Pessoa               from './Pessoa/Pessoa.js';
 import './App.css';
 
 
@@ -11,10 +12,13 @@ class App extends Component {
     //Retorna um codigo html.
     return (
 
-      <div className="App">
+      <div className="classeQualquerQueInventeiONome">
 
         <h1>Erik Lima</h1>
         <h2>My First React App</h2>
+
+        {/* Aqui eu coloco o componente que criei */}
+        <Pessoa />
 
       </div>
       
