@@ -18,7 +18,15 @@ class App extends Component {
         <h2>My First React App</h2>
 
         {/* Aqui eu coloco o componente que criei */}
-        <Pessoa />
+        <Pessoa nome="Erik" idade="29" />
+
+        {/* Aqui eu coloco o componente que criei */}
+        <Pessoa nome="Vanessa" idade="26" />  
+
+        {/* Aqui eu coloco o componente que criei */}
+        <Pessoa nome="Sakura" idade="28">Meus hobbies sao: Fazer exercicios</Pessoa>
+
+           
 
       </div>
       

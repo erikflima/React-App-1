@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 
 //Funcao que retorna o conteudo html
-const pessoa = () => {
+const pessoa = ( parametrosrecebidos ) => {
 
-    return <p>Hello, Esse é um número aleatório: {Math.random()}</p>
+    return <p>Olá, meu nome é {parametrosrecebidos.nome}  e minha idade é {parametrosrecebidos.idade}</p>
 
 };
 
