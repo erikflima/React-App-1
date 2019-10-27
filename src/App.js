@@ -16,6 +16,13 @@ class App extends Component {
 
   } 
 
+  //Funcao que criei.
+  trocarNomeHandler = () => {
+
+    console.log('Executando a funcao "trocarNomeHandler()"');
+
+  }
+
 
   //Crio o metdo 'render' e defino o conteudo que o metodo vai retornar. Que sera um codigo html a ser utilizado na pagina.
   render(){
@@ -29,7 +36,8 @@ class App extends Component {
         <h2>My First React App</h2>
 
 
-        <button>Trocar nome</button>
+        {/* Botao que executa uma funcao. */}
+        <button onClick={this.trocarNomeHandler}>Trocar nome</button>
 
 
         {/* Aqui eu coloco o componente que criei */}
