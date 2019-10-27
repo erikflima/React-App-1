@@ -5,7 +5,7 @@ import './App.css';
 
 class App extends Component {
 
-  //Criando um objeto statico javascript. Obs: Esse 'state' so funciona dentro de componentes.
+  //Criando um objeto estatico javascript. Obs: Esse 'state' so funciona dentro de componentes.
   state = {
 
     nomesDePessoas: [
@@ -20,6 +20,17 @@ class App extends Component {
   trocarNomeHandler = () => {
 
     console.log('Executando a funcao "trocarNomeHandler()"');
+    
+    //Alterando o conteudo do objeto
+    this.setState( {
+
+      nomesDePessoas: [
+        { nome: 'Keiko',   idade: 31},
+        { nome: 'Chun-Li', idade: 32},
+        { nome: 'Ono',     idade: 33}
+      ]
+
+    } )
 
   }
 
@@ -37,7 +48,7 @@ class App extends Component {
 
 
         {/* Botao que executa uma funcao. */}
-        <button onClick={this.trocarNomeHandler}>Trocar nome</button>
+        <button onClick={this.trocarNomeHandler}>Trocar nomes</button>
 
 
         {/* Aqui eu coloco o componente que criei */}
