@@ -5,6 +5,17 @@ import './App.css';
 
 class App extends Component {
 
+  //Criando um objeto statico javascript. Obs: Esse 'state' so funciona dentro de componentes.
+  state = {
+
+    nomesDePessoas: [
+      { nome: 'Erik',    idade: 30},
+      { nome: 'Vanessa', idade: 26},
+      { nome: 'Sakura',  idade: 28}
+    ]
+
+  } 
+
 
   //Crio o metdo 'render' e defino o conteudo que o metodo vai retornar. Que sera um codigo html a ser utilizado na pagina.
   render(){
@@ -17,15 +28,18 @@ class App extends Component {
         <h1>Erik Lima</h1>
         <h2>My First React App</h2>
 
-        {/* Aqui eu coloco o componente que criei */}
-        <Pessoa nome="Erik" idade="29" />
+
+        <button>Trocar nome</button>
+
 
         {/* Aqui eu coloco o componente que criei */}
-        <Pessoa nome="Vanessa" idade="26" />  
+        <Pessoa nome={this.state.nomesDePessoas[0].nome} idade={this.state.nomesDePessoas[0].idade} />
 
         {/* Aqui eu coloco o componente que criei */}
-        <Pessoa nome="Sakura" idade="28">Meus hobbies sao: Fazer exercicios</Pessoa>
+        <Pessoa nome={this.state.nomesDePessoas[1].nome} idade={this.state.nomesDePessoas[1].idade} />
 
+        {/* Aqui eu coloco o componente que criei */}
+        <Pessoa nome={this.state.nomesDePessoas[2].nome} idade={this.state.nomesDePessoas[2].idade}>Meus hobbies sao: Fazer exercicios</Pessoa>
            
 
       </div>
