@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Pessoa               from './Pessoa/Pessoa.js';
+import Pessoa               from './Pessoa/Pessoa.js'; //Importando o componente que criei.
 import './App.css';
 
 
